@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - NEXGEN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Seção do Formulário -->
+        <div class="auth-form-section">
+            <div class="auth-header">
+                <h1 class="text-xl font-bold">NEXGEN</h1>
+                <a href="login.html" class="auth-link">Já tem conta? Faça login</a>
+            </div>
+            
+            <h2 class="auth-title">Crie sua conta</h2>
+            <p class="auth-subtitle">Preencha os campos abaixo para se registrar</p>
+            
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="fullName" class="form-label">Nome Completo</label>
+                    <input type="text" id="fullName" name="fullName" class="form-input input-focus" placeholder="Seu nome completo" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-input input-focus" placeholder="seu@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" id="password" name="password" class="form-input input-focus" placeholder="••••••••" required>
+                    <p class="text-xs text-gray-500 mt-1">Mínimo de 8 caracteres</p>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirmPassword" class="form-label">Confirme sua Senha</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-input input-focus" placeholder="••••••••" required>
+                </div>
+                
+                <div class="flex items-center">
+                    <input type="checkbox" id="terms" name="terms" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded" required>
+                    <label for="terms" class="ml-2 text-sm text-gray-700">
+                        Concordo com os <a href="#" class="auth-link">Termos de Serviço</a> e <a href="#" class="auth-link">Política de Privacidade</a>
+                    </label>
+                </div>
+                
+                <button type="submit" class="auth-button">Criar conta</button>
+                
+                <div class="divider">
+                    <div class="divider-line"></div>
+                    <span class="divider-text">OU</span>
+                    <div class="divider-line"></div>
+                </div>
+                
+                <div class="social-buttons">
+                    <button type="button" class="social-button">
+                        <img src="https://www.google.com/favicon.ico" alt="Google" class="social-icon">
+                        <span>Google</span>
+                    </button>
+                    <button type="button" class="social-button">
+                        <img src="https://www.microsoft.com/favicon.ico" alt="Microsoft" class="social-icon">
+                        <span>Microsoft</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Seção Hero (apenas desktop) -->
+        <div class="auth-hero-section gradient-bg">
+            <div>
+                <h3 class="hero-title">Junte-se à revolução NEXGEN</h3>
+                <p class="hero-subtitle">Acesso a soluções exclusivas para seu negócio</p>
+                <div class="feature-icons">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

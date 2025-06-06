@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - NEXGEN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <!-- Seção do Formulário -->
+        <div class="auth-form-section">
+            <div class="auth-header">
+                <h1 class="text-xl font-bold">NEXGEN</h1>
+                <a href="cadastro.html" class="auth-link">Ainda não tem conta? Cadastre-se</a>
+            </div>
+            
+            <h2 class="auth-title">Bem-vindo de volta</h2>
+            <p class="auth-subtitle">Faça login para acessar sua conta</p>
+            
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-input input-focus" placeholder="seu@email.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <div class="flex justify-between items-center">
+                        <label for="password" class="form-label">Senha</label>
+                        <a href="recuperar-senha.html" class="auth-link">Esqueceu a senha?</a>
+                    </div>
+                    <input type="password" id="password" name="password" class="form-input input-focus" placeholder="••••••••" required>
+                </div>
+                
+                <div class="flex items-center">
+                    <input type="checkbox" id="remember" name="remember" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <label for="remember" class="ml-2 text-sm text-gray-700">Lembrar de mim</label>
+                </div>
+                
+                <button type="submit" class="auth-button">Entrar</button>
+                
+                <div class="divider">
+                    <div class="divider-line"></div>
+                    <span class="divider-text">OU</span>
+                    <div class="divider-line"></div>
+                </div>
+                
+                <div class="social-buttons">
+                    <button type="button" class="social-button">
+                        <img src="https://www.google.com/favicon.ico" alt="Google" class="social-icon">
+                        <span>Google</span>
+                    </button>
+                    <button type="button" class="social-button">
+                        <img src="https://www.microsoft.com/favicon.ico" alt="Microsoft" class="social-icon">
+                        <span>Microsoft</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Seção Hero (apenas desktop) -->
+        <div class="auth-hero-section gradient-bg">
+            <div>
+                <h3 class="hero-title">Transforme seu negócio com a NEXGEN</h3>
+                <p class="hero-subtitle">Soluções tecnológicas de ponta para impulsionar sua empresa</p>
+                <div class="feature-icons">
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
