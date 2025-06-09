@@ -3,9 +3,5 @@ flask-cors
 flask-mysqldb
 python-dotenv
 bcrypt
-pyjwt
-
- mysql-connector-python
-jwt
-dotenv
-a
+PyJWT
+mysql-connector-python

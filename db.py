@@ -10,6 +10,6 @@ def get_db_connection():
         host="localhost",
         user="root",
         password="",
-        database="nexgen_auth"
+        database="nexgen"
     )
 
